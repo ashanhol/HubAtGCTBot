@@ -50,7 +50,8 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
                             {
                                 reply.Text += $" {newMember.Name}";
                             }
-                            reply.Text += "!";
+                            reply.Text += "!" + Environment.NewLine;
+                            reply.Text += "If there's anything I can't help with, please email info@hubatgct.com";
                             await client.Conversations.ReplyToActivityAsync(reply);
                         }
                     }
