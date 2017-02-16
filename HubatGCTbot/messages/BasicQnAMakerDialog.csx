@@ -10,7 +10,7 @@ using Microsoft.Bot.Builder.CognitiveServices.QnAMaker;
 public class BasicQnAMakerDialog : QnAMakerDialog
 {
     // Go to https://qnamaker.ai and feed data, train & publish your QnA Knowledgebase.
-    public BasicQnAMakerDialog() : base(new QnAMakerService(new QnAMakerAttribute(Utils.GetAppSetting("QnASubscriptionKey"), Utils.GetAppSetting("QnAKnowledgebaseId"), "I'm not sure what you're asking. Send a message to info@hubatgct.com so I can be more helpful!")))
+    public BasicQnAMakerDialog() : base(new QnAMakerService(new QnAMakerAttribute(Utils.GetAppSetting("QnASubscriptionKey"), Utils.GetAppSetting("QnAKnowledgebaseId"), "STOP TRIPPIN", 0.5)))
     {
     }
 }
